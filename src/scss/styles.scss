@@ -1,5 +1,6 @@
 $dark:#000000;
 $secondary:#33ff00;
+$mt-5:200px;
 
 
 
@@ -9,13 +10,64 @@ $secondary:#33ff00;
 
 
 .custom-border {
-    border: 1px solid rgb(0, 0, 0); /* Změňte `red` na požadovanou barvu */
+    border: 1px solid rgb(0, 0, 0); 
   }
   
   
 
 
   .img-thumbnail {
-    aspect-ratio: 4 / 3; /* nebo 16 / 9, podle potřeby */
+    aspect-ratio: 4 / 3; 
     object-fit: cover;
 }
+
+
+
+
+ul{list-style-type: none;}
+
+
+
+.obrazek {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: relative;
+}
+
+
+.obrazek::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+
+.obrazek:hover::after {
+  opacity: 1;
+}
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1; 
+}
+
+
+.obrazek:hover .middle {
+  opacity: 1;
+}
+
+
