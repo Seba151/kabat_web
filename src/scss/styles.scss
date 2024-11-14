@@ -2,7 +2,7 @@ $dark:#000000;
 $secondary:#33ff00;
 $mt-5:200px;
 
-
+$h6-font-size:80px;
 
 
 // Import all of Bootstrap's CSS
@@ -111,19 +111,31 @@ ul{list-style-type: none;}
 }
 
 
-body{
-  font-family: "Bebas Neue", serif;
-  
-}
+
 
 body p{
-  font-size: 20px;
+  font-size: 23px;
+  font-family: "Raleway", serif;
 }
 
 body ul{
- font-size: 25px;
+ font-size: 30px;
+ font-family: "Bebas Neue", serif;
 }
 
 body a{
-  font-size: 22px;
+  font-size: 30px;
+  font-family: "Bebas Neue", serif;
  }
+
+ 
+.raleway {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
